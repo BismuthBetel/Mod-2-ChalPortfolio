@@ -1,0 +1,75 @@
+/*header section*/
+
+header {
+    padding: 10px 10px;
+    background-color: rgb(161, 190, 226);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(65, 93, 136);
+    
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 48px;
+    color: darkolivegreen;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: darkolivegreen;
+}
+/*header navigation bar*/
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 6px;
+
+}
+
+
+/* hero introduction section*/
+
+/*intro photo within hero section*/
+
+.intro-photo img{
+    max-width: 20%;
+    max-height: 20%;
+    position: relative;
+    top: 68px;
+    left: 125px;
+    border: 10px solid rgb(97, 172, 156);
+}
+
+/* My works section*/
+
+/*My Works section images and links*/
+
+.my-work img{
+    max-width: 20%;
+    max-height: 20%;
+    border-radius: 5%;
+}
+
+.horiseon{
+    max-width: 35%;
+    max-height: 35%;
+    border-radius: 5%;
+}
+
+/*Contact Information Section*/
+
+
+/*Footer*/
