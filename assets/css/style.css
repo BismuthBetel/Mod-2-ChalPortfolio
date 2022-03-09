@@ -73,3 +73,11 @@ header nav ul li a {
 
 
 /*Footer*/
+footer {
+    background-color: rgb(161, 190, 226);
+    width: 100%;
+    padding: 1px 14px;
+    display: flex;
+    justify-content: center;
+    color: rgb(85, 99, 64);
+}
