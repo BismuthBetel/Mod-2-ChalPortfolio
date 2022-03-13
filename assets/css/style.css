@@ -1,83 +1,169 @@
 /*header section*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header {
-    padding: 10px 10px;
-    background-color: rgb(161, 190, 226);
+    padding: 13px 0px;
+    background-color: rgb(32, 32, 53);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 1px solid rgb(65, 93, 136);
-    
+    border-bottom: 1px solid rgb(29, 164, 182);
+    width: auto;
+    margin: 0;
 }
 
 header h1{
     font-weight: bold;
     font-size: 48px;
-    color: darkolivegreen;
-    margin: 0;
+    margin: initial;
+    padding: 7px 50px;
+    background-color: rgb(73, 185, 185);
 }
+
 
 header a {
     text-decoration: none;
-    color: darkolivegreen;
 }
+
+.name a {
+    color: rgb(32, 32, 53);
+}
+
 /*header navigation bar*/
 header nav {
     margin: 7px 0;
+   
 }
 
 header nav ul {
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:  space-evenly;
     align-items: center;
     list-style: none;
 }
 
 header nav ul li a {
     padding: 10px 6px;
+    color:rgb(73, 185, 185);
+    font-size: 25px;
+    text-decoration: underline 5px;
 
 }
 
+body {
+    background-color: rgb(237, 237, 245);
+}
+
+section {
+    padding: 60px;
+}
+
+section h2 {
+    text-align: left;
+    border-right: 2px solid rgb(32, 32, 53);
+}
 
 /* hero introduction section*/
+.hero {
+    background-image: url(../images/hans-isaacson-qzjPS0n9EZA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
-/*intro photo within hero section*/
+/*intro paragraph*/
 
-.intro-photo img{
-    max-width: 20%;
-    max-height: 20%;
-    position: relative;
-    top: 68px;
-    left: 125px;
-    border: 10px solid rgb(97, 172, 156);
+.hero p {
+    margin: 0 auto;
+    text-align: right;
+}
+
+.about-me {
+    display: flex;
+    align-items: baseline;
+}
+
+.about-me h2 {
+    margin: auto;
+    padding: inherit;
+}
+
+.borderline p {
+    padding: 0 15px;
+    color: rgb(32, 32, 53);
 }
 
 /* My works section*/
+.my-work {
+    display: flex;
+    flex: content;
+    align-items: baseline;
+    
+}
+
+.my-work h2 {
+    margin: auto;
+    padding: inherit;
+}
 
 /*My Works section images and links*/
 
-.my-work img{
-    max-width: 20%;
-    max-height: 20%;
+.work-images {
+    margin: auto;
+    padding: inherit;
+}
+
+.run-bud div {
+    padding: 25px 50px;
+}
+.run-bud img {
+    
+    height: 60%;
+    width: 60%;
+    border-radius: 5%;
+    
+
+}
+
+.horiseon img{
+    max-width: 50%;
+    max-height: 50%;
     border-radius: 5%;
 }
 
-.horiseon{
-    max-width: 35%;
-    max-height: 35%;
-    border-radius: 5%;
+.future-work img {
+    height: 60%;
+    width: 60%;
 }
 
+.other-work img {
+    height: 60%;
+    width: 60%;
+}
 /*Contact Information Section*/
-
-
-/*Footer*/
-footer {
-    background-color: rgb(161, 190, 226);
+.contact-info {
     width: 100%;
-    padding: 1px 14px;
+}
+
+.contact-info h2 {
+    margin: auto;
+    padding: inherit;
+
+
+}
+
+.contact-info ul {
     display: flex;
-    justify-content: center;
-    color: rgb(85, 99, 64);
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.contact-info ul li a { 
+    text-decoration: none underline 3px;
+    font-weight: bold;
+    color:rgb(32, 32, 53)
 }
