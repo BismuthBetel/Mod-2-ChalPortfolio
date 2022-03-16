@@ -57,15 +57,17 @@ header nav ul li a {
 
 body {
     background-color: rgb(237, 237, 245);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;*/
 }
 
 section {
-    padding: 60px;
+    padding: 25px;
 }
 
 section h2 {
     text-align: left;
     border-right: 2px solid rgb(32, 32, 53);
+    font-size: 48px;
 }
 
 /* hero introduction section*/
@@ -92,16 +94,20 @@ section h2 {
     padding: inherit;
 }
 
-.borderline p {
+.my-intro p {
     padding: 0 15px;
     color: rgb(32, 32, 53);
+    line-height: 29.5px;
+    display: flex;
 }
 
 /* My works section*/
 .my-work {
-    display: flex;
-    flex: content;
-    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    /*flex: content;
+    /align-items: baseline;*/
     
 }
 
@@ -113,6 +119,8 @@ section h2 {
 /*My Works section images and links*/
 
 .work-images {
+    grid-column: 3/9;
+    /*display: grid;*/
     margin: auto;
     padding: inherit;
 }
@@ -120,32 +128,80 @@ section h2 {
 .run-bud div {
     padding: 25px 50px;
 }
-.run-bud img {
+
+.row { 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: flex-start;
+    position: relative;
+    text-align: center;
+    color: rgb(32, 32, 53);
+   
+}
+
+.row a {
+    margin: auto;
+
+}
+.row img {
+    display: flex;
+    width: 75%;
+    height: 40%;
+    object-fit: cover;
+    border: 12px solid rgb(29, 164, 182);
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 48px;
+    left: 16px;
+   background-color: rgb(29, 164, 182);
+    padding: 15px;
+
+}
+.other-row {
+    flex: 50%;
+    padding: 0 4px;
+    justify-content: center;
+
+}
+
+.other-row img{ 
     
-    height: 60%;
-    width: 60%;
-    border-radius: 5%;
-    
-
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
-.horiseon img{
-    max-width: 50%;
-    max-height: 50%;
-    border-radius: 5%;
+.imagehoriseon img{
+    position: relative;
+    text-align: center;
 }
 
-.future-work img {
-    height: 60%;
-    width: 60%;
+.hori {
+    position:absolute;
+    bottom: 30px;
+    left: 16px;
 }
-
-.other-work img {
-    height: 60%;
-    width: 60%;
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}
+.column img { 
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 /*Contact Information Section*/
 .contact-info {
+    /*display: flex;
+    justify-content: space-between;*/
+    display: grid;
     width: 100%;
 }
 
@@ -163,7 +219,25 @@ section h2 {
 }
 
 .contact-info ul li a { 
-    text-decoration: none underline 3px;
+    text-decoration: none underline 10px;
     font-weight: bold;
     color:rgb(32, 32, 53)
+}
+
+.links {
+    margin: 10px;
+}
+
+#email {
+    margin:auto;
+    padding: 34px;
+}
+
+#github {
+    margin: auto;
+}
+
+#linkedin {
+    margin: auto;
+    padding: 34px;
 }
