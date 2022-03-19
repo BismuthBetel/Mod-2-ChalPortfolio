@@ -1,179 +1,176 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /*header section*/
 
 header {
-    padding: 13px 0px;
-    background-color: rgb(32, 32, 53);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-bottom: 1px solid rgb(29, 164, 182);
-    width: 100%;
-    margin: 0;
+  padding: 13px 0px;
+  background-color: rgb(32, 32, 53);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(29, 164, 182);
+  width: 100%;
+  margin: 0;
 }
 
-header h1{
-    font-weight: bold;
-    font-size: 48px;
-    margin: initial;
-    padding: 7px 50px;
-    background-color: rgb(91, 189, 202);
+header h1 {
+  font-weight: bold;
+  font-size: 48px;
+  margin: initial;
+  padding: 7px 50px;
+  background-color: rgb(91, 189, 202);
 }
-
 
 header a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .name a {
-    color: rgb(32, 32, 53);
+  color: rgb(32, 32, 53);
 }
 
 /*header navigation bar*/
 header nav {
-    margin: 7px 0;
-   
+  margin: 7px 0;
 }
 
 header nav ul {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:  space-evenly;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
-    padding: 10px 6px;
-    color: rgb(91, 189, 202);
-    font-size: 25px;
-    text-decoration: underline 5px;
-
+  padding: 10px 6px;
+  color: rgb(91, 189, 202);
+  font-size: 25px;
+  text-decoration: underline 5px;
 }
 
 /*body*/
 
 body {
-    background-color: rgb(211, 211, 240);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(211, 211, 240);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 section {
-    padding: 25px;
-    
+  padding: 25px;
 }
 
 section h2 {
-    text-align: left;
-    font-size: 48px;
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: rgb(120, 196, 153);
-    width: 25%;
+  text-align: left;
+  font-size: 48px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgb(120, 196, 153);
+  width: 25%;
 }
 
-/* hero introduction section*/
+/* hero banner section*/
 .hero {
-    background-image: url(../images/hans-isaacson-qzjPS0n9EZA-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    padding: 34px;
+  background-image: url(../images/hans-isaacson-qzjPS0n9EZA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 34px;
+}
+
+.hero p {
+  margin: 0 auto;
+  text-align: right;
+  color: rgb(32, 32, 53);
+  font-style: italic;
 }
 
 /*intro paragraph*/
 
-.hero p {
-    margin: 0 auto;
-    text-align: right;
-    color: rgb(32, 32, 53);
+#my-intro {
+  padding: 10px;
 }
 
-#my-intro {
-    padding: 10px;
-}
+/*work main content section*/
 
 .my-work {
-    display: flex;
-    flex-direction: column;
-    
-
+  display: flex;
+  flex-direction: column;
 }
+
+/* big first image*/
 
 .first-work {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
-
 
 .first-work img {
-    width: 700px;
-    border-radius: 10px;
+  width: 700px;
+  border-radius: 10px;
 }
 
+/* The two following rows of images of apps*/
+
 .row-one {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .row-one img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
-#horiseon img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+#horiseon img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .image-titles {
-    position: relative;
-    bottom: 50px;
-    left: 10px;
-    color: rgb(211, 211, 240)
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+  color: rgb(211, 211, 240);
 }
 
 .runbud-title {
-    position: relative;
-    top: -58px;
-    left: 241px;
-    color: rgb(211, 211, 240);
-    
+  position: relative;
+  top: -58px;
+  left: 241px;
+  color: rgb(211, 211, 240);
 }
 
-footer {
+/*footer*/
 
-    width: 100%;
-    padding: 20px 35px;
-    display: inline-flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: rgb(120, 196, 153);
+footer {
+  width: 100%;
+  padding: 20px 35px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(120, 196, 153);
 }
 
 footer h2 {
-    color: rgb(32, 32, 53);
-    padding: 10px;
+  color: rgb(32, 32, 53);
+  padding: 10px;
 }
 
 footer ul li {
-    display: inline-flex;
-    
+  display: inline-flex;
 }
 
 footer ul li a {
-    justify-content: space-between;
-    text-decoration: none;
-    color: rgb(32, 32, 53);
-    margin: 10px;
+  justify-content: space-between;
+  text-decoration: none;
+  color: rgb(32, 32, 53);
+  margin: 10px;
 }
