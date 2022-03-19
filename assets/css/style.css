@@ -1,10 +1,13 @@
-/*header section*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/*header section*/
+
 header {
     padding: 13px 0px;
     background-color: rgb(32, 32, 53);
@@ -12,7 +15,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 1px solid rgb(29, 164, 182);
-    width: auto;
+    width: 100%;
     margin: 0;
 }
 
@@ -21,7 +24,7 @@ header h1{
     font-size: 48px;
     margin: initial;
     padding: 7px 50px;
-    background-color: rgb(73, 185, 185);
+    background-color: rgb(91, 189, 202);
 }
 
 
@@ -49,25 +52,31 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 6px;
-    color:rgb(73, 185, 185);
+    color: rgb(91, 189, 202);
     font-size: 25px;
     text-decoration: underline 5px;
 
 }
 
+/*body*/
+
 body {
-    background-color: rgb(237, 237, 245);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;*/
+    background-color: rgb(211, 211, 240);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 section {
     padding: 25px;
+    
 }
 
 section h2 {
     text-align: left;
-    border-right: 2px solid rgb(32, 32, 53);
     font-size: 48px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(120, 196, 153);
+    width: 25%;
 }
 
 /* hero introduction section*/
@@ -75,6 +84,8 @@ section h2 {
     background-image: url(../images/hans-isaacson-qzjPS0n9EZA-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    width: 100%;
+    padding: 34px;
 }
 
 /*intro paragraph*/
@@ -82,162 +93,87 @@ section h2 {
 .hero p {
     margin: 0 auto;
     text-align: right;
-}
-
-.about-me {
-    display: flex;
-    align-items: baseline;
-}
-
-.about-me h2 {
-    margin: auto;
-    padding: inherit;
-}
-
-.my-intro p {
-    padding: 0 15px;
     color: rgb(32, 32, 53);
-    line-height: 29.5px;
-    display: flex;
 }
 
-/* My works section*/
+#my-intro {
+    padding: 10px;
+}
+
 .my-work {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-    /*flex: content;
-    /align-items: baseline;*/
-    
-}
-
-.my-work h2 {
-    margin: auto;
-    padding: inherit;
-}
-
-/*My Works section images and links*/
-
-.work-images {
-    grid-column: 3/9;
-    /*display: grid;*/
-    margin: auto;
-    padding: inherit;
-}
-
-.run-bud div {
-    padding: 25px 50px;
-}
-
-.row { 
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: flex-start;
-    position: relative;
-    text-align: center;
-    color: rgb(32, 32, 53);
-   
-}
-
-.row a {
-    margin: auto;
+    flex-direction: column;
+    
 
 }
-.row img {
+
+.first-work {
     display: flex;
-    width: 75%;
-    height: 40%;
-    object-fit: cover;
-    border: 12px solid rgb(29, 164, 182);
-}
-
-.bottom-left {
-    position: absolute;
-    bottom: 48px;
-    left: 16px;
-   background-color: rgb(29, 164, 182);
-    padding: 15px;
-
-}
-.other-row {
-    flex: 50%;
-    padding: 0 4px;
     justify-content: center;
-
 }
 
-.other-row img{ 
-    
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.imagehoriseon img{
-    position: relative;
-    text-align: center;
-}
-
-.hori {
-    position:absolute;
-    bottom: 30px;
-    left: 16px;
-}
-.column {
-    flex: 50%;
-    padding: 0 4px;
-}
-.column img { 
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-/*Contact Information Section*/
-.contact-info {
-    /*display: flex;
-    justify-content: space-between;*/
-    display: grid;
-    width: 100%;
-}
-
-.contact-info h2 {
-    margin: auto;
-    padding: inherit;
 
 
+.first-work img {
+    width: 700px;
+    border-radius: 10px;
 }
 
-.contact-info ul {
+.row-one {
     display: flex;
+    flex: 1;
+    flex-direction: row;
     justify-content: space-evenly;
-    list-style: none;
 }
 
-.contact-info ul li a { 
-    text-decoration: none underline 10px;
-    font-weight: bold;
-    color:rgb(32, 32, 53)
+.row-one img {
+    border-radius: 10px;
+}
+#horiseon img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.links {
+.image-titles {
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+    color: rgb(211, 211, 240)
+}
+
+.runbud-title {
+    position: relative;
+    top: -58px;
+    left: 241px;
+    color: rgb(211, 211, 240);
+    
+}
+
+footer {
+
+    width: 100%;
+    padding: 20px 35px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(120, 196, 153);
+}
+
+footer h2 {
+    color: rgb(32, 32, 53);
+    padding: 10px;
+}
+
+footer ul li {
+    display: inline-flex;
+    
+}
+
+footer ul li a {
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(32, 32, 53);
     margin: 10px;
-}
-
-#email {
-    margin:auto;
-    padding: 34px;
-}
-
-#github {
-    margin: auto;
-}
-
-#linkedin {
-    margin: auto;
-    padding: 34px;
 }
