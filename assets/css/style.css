@@ -1,3 +1,10 @@
+:root {
+  --primary-color: rgb(32,32,53);
+  --secondary-color: rgb(120, 196, 153);
+  --tertiary-color: rgb(91, 189, 202);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +16,7 @@
 
 header {
   padding: 13px 0px;
-  background-color: rgb(32, 32, 53);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -23,7 +30,7 @@ header h1 {
   font-size: 48px;
   margin: initial;
   padding: 7px 50px;
-  background-color: rgb(91, 189, 202);
+  background-color: var(--tertiary-color);
 }
 
 header a {
@@ -31,7 +38,7 @@ header a {
 }
 
 .name a {
-  color: rgb(32, 32, 53);
+  color: var(--primary-color);
 }
 
 /*header navigation bar*/
@@ -49,7 +56,7 @@ header nav ul {
 
 header nav ul li a {
   padding: 10px 6px;
-  color: rgb(91, 189, 202);
+  color: var(--tertiary-color);
   font-size: 25px;
   text-decoration: underline 5px;
 }
@@ -67,11 +74,12 @@ section {
 }
 
 section h2 {
+  color: var(--primary-color);
   text-align: left;
   font-size: 48px;
   display: flex;
   flex-direction: column-reverse;
-  background-color: rgb(120, 196, 153);
+  background-color: rgb(120, 196, 153, .5);
   width: 25%;
 }
 
@@ -87,7 +95,7 @@ section h2 {
 .hero p {
   margin: 0 auto;
   text-align: right;
-  color: rgb(32, 32, 53);
+  color: var(--primary-color);
   font-style: italic;
 }
 
@@ -96,7 +104,7 @@ section h2 {
     position: absolute;
     left: 519px;
     top: 111px;
-    border: 3px solid rgb(32, 32, 53);
+    border: 3px solid var(--primary-color);
 }
 
 /*intro paragraph*/
@@ -182,7 +190,7 @@ footer {
 }
 
 footer h2 {
-  color: rgb(32, 32, 53);
+  color: var(--primary-color);
   padding: 10px;
 }
 
@@ -193,7 +201,7 @@ footer ul li {
 footer ul li a {
   justify-content: space-between;
   text-decoration: none;
-  color: rgb(32, 32, 53);
+  color: var(--primary-color);
   margin: 10px;
 }
 
@@ -291,7 +299,7 @@ footer ul li a {
 
     .personal-photo img {
         width: 140px;
-        left: 2px;
+        left: 24px;
     }
 
 }
